@@ -9,7 +9,6 @@ console.log('Hello World');
 let firstName = 'Melih';
 let lastName = 'Erduran';
 const interestRate = 0.3;
-interestRate = 1;
 console.log(interestRate);
 
 /*let name = 'Melih'; // String Literal
@@ -30,3 +29,6 @@ person['name'] = 'Melih3';
 let selection = 'name';
 person[selection] = 'Melih4';
 
+let selectedColors = ['red', 'blue'];
+selectedColors[2] = 1;
+console.log(selectedColors.length)
