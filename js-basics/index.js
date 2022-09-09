@@ -40,3 +40,18 @@ greet('Melih Erduran');
 function triArea(base, height){
     return((base * height)/2)
 }
+
+for (let i = 0; i < 5; i++) {
+    console.log('I Am The Best Programmer')
+}
+
+/*for (let i=0; i <= 100; i++) {
+    console.log(i);
+}*/
+
+function power(base, exponent) {
+    console.log(base ** exponent);
+}
+
+power(2, 3);
+power(4 ,5);
