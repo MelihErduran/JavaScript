@@ -45,9 +45,9 @@ for (let i = 0; i < 5; i++) {
     console.log('I Am The Best Programmer')
 }
 
-/*for (let i=0; i <= 100; i++) {
+for (let i=0; i <= 100; i++) {
     console.log(i);
-}*/
+}
 
 function power(base, exponent) {
     console.log(base ** exponent);
@@ -55,3 +55,14 @@ function power(base, exponent) {
 
 power(2, 3);
 power(4 ,5);
+
+function addUp(num1, num2) {
+    let total = 0
+    for (let i=num1; i<=num2; i++){
+        total += i
+    }
+    return(total)
+}
+console.log(addUp(4, 8));
+
+console.log(addUp(5, 6));
