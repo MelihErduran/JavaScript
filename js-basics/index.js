@@ -66,3 +66,32 @@ function addUp(num1, num2) {
 console.log(addUp(4, 8));
 
 console.log(addUp(5, 6));
+
+let counter = 1;
+while (counter <=100) {
+    console.log(counter)
+    counter++
+};
+
+for (let i = 1;i <=100; i++) {
+    console.log(i);
+}
+
+let password = 'Melih';
+let passwordEntry = prompt('Please enter your password');
+while (passwordEntry != password) {
+    passwordEntry = prompt('Please enter your password');
+}
+alert('Access Granted: Welcome To Your Website');
+
+let hour = 10;
+
+if (hour >= 6 && hour < 12) {
+    console.log('Good Morning');
+} else if (hour >= 12 && hour < 16) {
+    console.log('Good Afternoon');
+} else if (hour >= 16 && hour < 18) {
+    console.log('Good Evening');
+} else {
+    console.log('Good Night')
+}
