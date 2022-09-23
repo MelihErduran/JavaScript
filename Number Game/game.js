@@ -4,9 +4,7 @@ let userGuess = prompt('What is the Secret Number?');
 let guessNumber = Number(userGuess);
 let userAttempts = 1;
 let gameBeaten = false;
-while (gameBeaten == false) {
-    if(!Number.isNaN(guessNumber)) {
-        while (guessNumber != actualNumber) {
+while (guessNumber != actualNumber) {
             if (userAttempts < 5){
                 if (guessNumber < actualNumber) {
                 guessNumber = prompt('Go Higher!')
@@ -14,16 +12,13 @@ while (gameBeaten == false) {
                 } else if (guessNumber > actualNumber) {
                 guessNumber = prompt('Go Lower!')
                 userAttempts ++;
-                } else if (guessNumber == actualNumber){
-                    gameBeaten = true;
+                } else if (userAttempts >= 5) {
+                alert('Game Over, You Have Passed 5 Attempts. The Secret Number was ' + actualNumber);
+                } else {
+                    alert('It Has To Be A Number');
+                    guessNumber = prompt('What is the Secret Number');
                 }
-            } else if (userAttempts >= 5) {
-                alert('Game Over, You Have Passed 5 Attempts');
             }
-        };  
-    } else {
-        alert('It has to be a number');
-    }
 }
 if (userAttempts == 1) {
     alert('Congrats, You Have Guessed and Beaten the Computer. It Took You ' + userAttempts + ' Try!');
