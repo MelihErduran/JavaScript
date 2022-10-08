@@ -84,7 +84,8 @@ while (passwordEntry != password) {
 }
 alert('Access Granted: Welcome To Your Website');
 
-let hour = 10;
+let time = new Date();
+const hour = time.getHours();
 
 if (hour >= 6 && hour < 12) {
     console.log('Good Morning');
